@@ -8,13 +8,14 @@
 import pymongo
 import scrapy
 from itemadapter import ItemAdapter
+from spider_img import settings
 class SpiderImgPipeline:
 
     def __init__(self):
         """
         初始化mongdb
         """
-        self.client = pymongo.MongoClient('49.233.214.123')
+        self.client = pymongo.MongoClient(settings.MongoDB_HOST)
         self.db = self.client['spider_img']
         self.table = self.db['img']
 
