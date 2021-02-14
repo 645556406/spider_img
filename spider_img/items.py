@@ -12,3 +12,7 @@ class SpiderImgItem(scrapy.Item):
     img = scrapy.Field()
     MD5 = scrapy.Field()
     image_urls = scrapy.Field()
+
+class SpiderGitlab(scrapy.Item):
+    username = scrapy.Field()
+    email = scrapy.Field()

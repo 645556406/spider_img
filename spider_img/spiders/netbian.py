@@ -1,5 +1,3 @@
-import time
-
 import scrapy
 from spider_img.items import SpiderImgItem
 from spider_img.utils.md5 import item_md5
