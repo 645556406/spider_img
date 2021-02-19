@@ -1,1 +1,1 @@
-FROM registry.cn-hangzhou.aliyuncs.com/wangye-front/front
+FROM centos
